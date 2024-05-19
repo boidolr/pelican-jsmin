@@ -1,3 +1,3 @@
-from .jsmin import add_jinja2_ext, register
+from .jsmin import register
 
-__all__ = ["add_jinja2_ext", "register"]
+__all__ = ["register"]
