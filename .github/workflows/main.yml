@@ -14,10 +14,10 @@ jobs:
         python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
 
       - name: Set up Python ${{ matrix.python-version }} & PDM
-        uses: pdm-project/setup-pdm@v3
+        uses: pdm-project/setup-pdm@ddc33ca746b5716353581f988b29464200212702 # v3
         with:
           python-version: ${{ matrix.python-version }}
           cache: true
@@ -34,16 +34,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
 
       - name: Validate links in Markdown files
-        uses: JustinBeckwith/linkinator-action@v1
+        uses: JustinBeckwith/linkinator-action@39e601e8efc0c24b7228ec87e43f4b9abebf3b25 # v1
         with:
           retry: true
           linksToSkip: "https://pypi.org/project/pelican-rjsmin/"
 
       - name: Set up Python & PDM
-        uses: pdm-project/setup-pdm@v3
+        uses: pdm-project/setup-pdm@ddc33ca746b5716353581f988b29464200212702 # v3
         with:
           python-version: "3.12"
           cache: true
