@@ -37,7 +37,7 @@ jobs:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
       - name: Validate links in Markdown files
-        uses: JustinBeckwith/linkinator-action@39e601e8efc0c24b7228ec87e43f4b9abebf3b25 # v1
+        uses: JustinBeckwith/linkinator-action@3d5ba091319fa7b0ac14703761eebb7d100e6f6d # v1
         with:
           retry: true
           linksToSkip: "https://pypi.org/project/pelican-rjsmin/"
